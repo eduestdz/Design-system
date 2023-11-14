@@ -35,7 +35,7 @@ const Home: FC = () => {
         <Box
           className={`--component-border${nameStyle()} --corner-s-1 --component-surface${nameStyle()}`}
           sx={{
-            width: '150px',
+            width: '350px',
             height: '150px'
           }}
         />
