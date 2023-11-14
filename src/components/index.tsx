@@ -1,4 +1,4 @@
-import { Box, Button, Checkbox, Stack } from '@mui/material'
+import { Box, Button, Checkbox, Stack, Typography } from '@mui/material'
 import React, { FC, useState } from 'react'
 
 const Home: FC = () => {
@@ -12,49 +12,41 @@ const Home: FC = () => {
     setError(!error)
   }
 
-  const getStatus = () => {
-    if (error) return 'error.main'
-    if (!checked) return 'primary.main'
-    if (checked) return 'success.main'
-  }
-
-  const getStatusName = () => {
+  const nameStyle = () => {
     if (error) return '-error'
     if (!checked) return ''
     if (checked) return '-checked'
   }
-  const label = { inputProps: { 'aria-label': 'Checkbox demo' } }
   return (
-    <>
+    <Stack>
       <Stack
         direction="row"
         justifyContent="center"
+      >
+        <Typography fontSize={30} mt={4} fontWeight={800}>TOKENS</Typography>
+      </Stack>
+      <Stack
+        direction="column"
+        justifyContent="flex-end"
         alignItems="center"
         spacing={2}
+        mt={9}
       >
-        <Checkbox {...label} checked={checked} onChange={handleChange} />
-        {getStatus()}
         <Box
-          className={`--component-border${getStatusName()} --corner-s-1 --component-surface${getStatusName()}`}
+          className={`--component-border${nameStyle()} --corner-s-1 --component-surface${nameStyle()}`}
           sx={{
             width: '150px',
             height: '150px'
-            // bgcolor: `${getStatus()}`
           }}
         />
-      </Stack>
-      <Stack
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        spacing={2}
-        mt={2}
-      >
-        <Button variant="contained" onClick={() => toggleError()}>
-          On / Off Error
-        </Button>
-      </Stack>
-    </>
+        <Stack >
+          <Checkbox disableRipple={true} color='success' checked={checked} onChange={handleChange} />
+          <Button color='error' variant="contained" onClick={() => toggleError()}>
+            Activar Error
+          </Button>
+        </Stack>
+      </Stack >
+    </Stack>
   )
 }
 
