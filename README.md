@@ -1,9 +1,3 @@
-# DS 👨‍⚕️
+# DS 🍭
 
-Repositorio Frontend del proyecto portal paciente Red Salud.
-
-Tecnologias usadas :
-
-- React
-- Next JS
-- MaterialUI
+Repositorio para tareas de Design System 👨‍💻
