@@ -2,62 +2,32 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons&font-display: swap;');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap&font-display: swap;');
 
-/*PRODUCT 1*/
+/*-----Producto 2-------*/
 
-/* .--component-surface {
-  background: #f5f1b4;
+.--component-surface {
+  background: #F4F1BB;
 }
 
 .--component-surface-checked {
-  background: #f5f1b4;
+  background: #F4F1DE;
 }
 
 .--component-surface-error {
-  background-color: #91c2bc;
+  background-color: #9BC1BC;
 }
 
 .--component-border {
-  border: 2px solid #e5ebdf;
+  border: 5px solid #E6EBE0;
 }
 
 .--component-border-checked {
-  border: 2px solid #00cdc7;
+  border: 5px solid #F07A5F;
 }
 
 .--component-border-error {
-  border: 2px solid #ff5f52;
+  border: 5px solid #CB414D;
 }
 
 .--corner-s-1 {
   border-radius: 4px;
-} */
-
-/*PRODUCT  2*/
-
-.--component-surface {
-  background: #f5f1dc;
-}
-
-.--component-surface-checked {
-  background: #f5f1dc;
-}
-
-.--component-surface-error {
-  background-color: #88ae39;
-}
-
-.--component-border {
-  border: 3px solid #49907c;
-}
-
-.--component-border-checked {
-  border: 3px solid #f07357;
-}
-
-.--component-border-error {
-  border: 3px solid #cb414d;
-}
-
-.--corner-s-1 {
-  border-radius: 24px;
 }
