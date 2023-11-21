@@ -20,12 +20,6 @@ const Token: FC = () => {
     return (
         <Stack>
             <Stack
-                direction="row"
-                justifyContent="center"
-            >
-                <Typography fontSize={30} mt={4} fontWeight={800}>TOKENS</Typography>
-            </Stack>
-            <Stack
                 direction="column"
                 justifyContent="flex-end"
                 alignItems="center"
