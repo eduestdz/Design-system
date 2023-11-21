@@ -1,62 +1,69 @@
-import { Grid, Paper, Stack } from '@mui/material'
-import { grey } from '@mui/material/colors';
+import { Box, Grid, Typography } from '@mui/material'
 import React, { FC } from 'react'
 
 const Grilla: FC = () => {
 
     const styles = {
-        gridContainer: {
-            //  minHeight: '100vh',
-            alignItems: 'stretch'
-        },
         content: {
+            display: 'flex',
+            flexDirection: 'column',
+            margin: '16px',
+            border: '1px solid grey',
+        },
+        typography: {
             flex: 1,
             padding: '16px',
-            alignItems: 'stretch'
+        },
+        box: {
+            height: 42,
+            background: '#BE2F27',
         },
     };
 
     return (
-        <Grid container direction="row" style={styles.gridContainer} >
-            {/* Cuadrícula 1 */}
-            <Grid item xs style={styles.content}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
-                <Grid item sx={{
-                    height: 42, background: '#BE2F27',
-                }}>
-                </Grid>
+        <Grid display='flex'>
+            {/* GRID-1 */}
+            <Grid item xs sx={styles.content}>
+                <Typography style={styles.typography}>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
+                </Typography>
+                <Box style={styles.box}>
+                </Box>
             </Grid>
+            {/* GRID-2 */}
+            <Grid item xs sx={styles.content}>
+                <Typography style={styles.typography}>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
 
-            <Grid item xs style={styles.content}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo.
-                <Grid item sx={{
-                    height: 42, background: '#BE2F27',
-                }}>
-                </Grid>
+                </Typography>
+                <Box style={styles.box}>
+                </Box>
             </Grid>
-            <Grid item xs style={styles.content}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nisi.
-                <Grid item sx={{
-                    height: 42, background: '#BE2F27',
-                }}>
-                </Grid>
+            {/* GRID-3 */}
+            <Grid item xs sx={styles.content}>
+                <Typography style={styles.typography}>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
+                </Typography>
+                <Box style={styles.box}>
+                </Box>
             </Grid>
-            <Grid item xs style={styles.content}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam perferendis adipisci placeat, saepe reprehenderit sed magnam deserunt eligendi blanditiis aut inventore tempore corrupti hic velit illo voluptatem minima iure ad ab eos
-                <Grid item sx={{
-                    height: 42, background: '#BE2F27',
-                }}>
-                </Grid>
+            {/* GRID-4 */}
+            <Grid item xs sx={styles.content}>
+                <Typography style={styles.typography}>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid.
+                </Typography>
+                <Box style={styles.box}>
+                </Box>
             </Grid>
-            <Grid item xs style={styles.content}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, natus.
-                <Grid item sx={{
-                    height: 42, background: '#BE2F27',
-                }}>
-                </Grid>
-            </Grid>
-
         </Grid>
+
     )
 }
 
