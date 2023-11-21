@@ -42,13 +42,6 @@ const Grilla: FC = () => {
                 </Grid>
             </Grid>
             <Grid item xs style={styles.content}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, soluta.
-                <Grid item sx={{
-                    height: 42, background: '#BE2F27',
-                }}>
-                </Grid>
-            </Grid>
-            <Grid item xs style={styles.content}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam perferendis adipisci placeat, saepe reprehenderit sed magnam deserunt eligendi blanditiis aut inventore tempore corrupti hic velit illo voluptatem minima iure ad ab eos
                 <Grid item sx={{
                     height: 42, background: '#BE2F27',
